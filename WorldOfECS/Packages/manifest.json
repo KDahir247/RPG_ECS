@@ -10,6 +10,8 @@
     "com.unity.inputsystem": "1.0.0",
     "com.unity.jobs": "0.2.10-preview.11",
     "com.unity.kinematica": "0.6.0-preview",
+    "com.unity.rendering.hybrid": "0.5.1-preview.18",
+    "com.unity.terrain-tools": "3.0.1-preview",
     "com.unity.test-framework": "1.1.14",
     "com.unity.textmeshpro": "2.0.1",
     "com.unity.timeline": "1.2.14",

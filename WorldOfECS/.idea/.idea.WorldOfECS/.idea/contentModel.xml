@@ -8,7 +8,13 @@
     <e p="C:\Users\kdahi\.Rider2019.2\system\resharper-host\Local\Transient\ReSharperHost\v192\SolutionCaches\_WorldOfECS.1412163091.00" t="ExcludeRecursive" />
     <e p="C:\Users\kdahi\Documents\RPGECS\RPG_ECS\WorldOfECS" t="IncludeRecursive">
       <e p="Assembly-CSharp-firstpass.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="Asset Packs" t="Include">
+          <e p="Synty - Polygon Student Sample" t="Include">
+            <e p="README - Usage Rights for these assets.txt" t="Include" />
+          </e>
+        </e>
         <e p="Plugins" t="Include">
           <e p="LINQtoGameObject" t="Include">
             <e p="Examples" t="Include">
@@ -298,6 +304,38 @@
                 <e p="Thread.cs" t="Include" />
                 <e p="ThreadPoolScheduler_UnityWinRT.cs" t="Include" />
               </e>
+            </e>
+          </e>
+        </e>
+        <e p="Scripts" t="Include">
+          <e p="Authoring" t="Include">
+            <e p="Player" t="Include">
+              <e p="PlayerConversionAuthoring.cs" t="Include" />
+            </e>
+          </e>
+          <e p="ComponentSystem" t="Include">
+            <e p="Player" t="Include">
+              <e p="NavMeshControllerSystem.cs" t="Include" />
+              <e p="RaycastCommandBufferSystem.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Data" t="Include">
+            <e p="Player" t="Include">
+              <e p="NavAgentData.cs" t="Include" />
+              <e p="PhysicsCommandData.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Mono" t="Include">
+            <e p="Camera" t="Include">
+              <e p="SendEntityData.cs" t="Include" />
+            </e>
+          </e>
+          <e p="NeedToConvert" t="Include">
+            <e p="Mover.cs" t="Include" />
+          </e>
+          <e p="ReactiveEvent" t="Include">
+            <e p="BehaviourEventbus" t="Include">
+              <e p="BehaviourEventBus.cs" t="Include" />
             </e>
           </e>
         </e>
