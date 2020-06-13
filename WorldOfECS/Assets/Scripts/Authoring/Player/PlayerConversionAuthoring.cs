@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using Unity.Entities;
 using Unity.Transforms;
 using UnityEngine;
-using WOrldOfECS.Data;
+using WorldOfECS.Data;
 
 
-namespace WOrldOfECS.Authoring
+namespace WorldOfECS.Authoring
 {
     [RequiresEntityConversion]
     public class PlayerConversionAuthoring : MonoBehaviour, IConvertGameObjectToEntity

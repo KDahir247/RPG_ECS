@@ -3,36 +3,43 @@ using UniRx;
 using Unity.Collections;
 using Unity.Entities;
 using Unity.Jobs;
+using Unity.Physics.Systems;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using WOrldOfECS.Data;
-using WOrldOfECS.Event;
+using WorldOfECS.Data;
+using WorldOfECS.Event;
 
-namespace WOrldOfECS.ComponentBufferSystem
+namespace WorldOfECS.ComponentBufferSystem
 {
 // since the terrain collider isn't integrated in unity ecs/dots we are going to set up a raycast buffer for raycast job scheduling
+//TODO Might convert from standard gameObject raycast to entity raycast. Since gameObject raycast can't pickup Entity and vis versa.
+
+
     public class RaycastCommandBufferSystem : Unity.Entities.ComponentSystem
     {
-        readonly BehaviourEventBus _event = new BehaviourEventBus();
-        readonly Mouse _mouse = Mouse.current;
-
+        private readonly BehaviourEventBus _event = new BehaviourEventBus();
+        private readonly Mouse _mouse = Mouse.current;
         private Camera _camera;
-
-        protected override void OnCreate()
+        
+        
+        
+        protected override void OnStartRunning()
         {
             _event.OfType<object, Camera>()
                 .Where(cam => cam != null)
                 .Subscribe(camera => { _camera = camera; });
+            
         }
 
         protected override void OnUpdate()
         {
-            Unity.Assertions.Assert.IsNotNull(_camera);
+//            Unity.Assertions.Assert.IsNotNull(_camera);
 
             var commands = new NativeArray<RaycastCommand>(1, Allocator.TempJob);
             var results = new NativeArray<RaycastHit>(1, Allocator.TempJob);
+            
+            JobHandle job = default;
 
-            JobHandle job = new JobHandle();
 
             Entities.ForEach((Entity entity,
                 ref PhysicsCommandData physicsCommandData,
@@ -60,14 +67,33 @@ namespace WOrldOfECS.ComponentBufferSystem
 
                     job.Complete();
 
-                    navAgentData.destination = results[0].point;
-                    navAgentData.normal = results[0].normal;
-                    navAgentData.distance = results[0].distance;
+                    if (results[0].collider != null)
+                    {
+                        navAgentData.destination = results[0].point;
+                        navAgentData.normal = results[0].normal;
+                        navAgentData.distance = results[0].distance;
+                        navAgentData.hasPath = true;
+                    }
+                    else
+                    {
+                        navAgentData.hasPath = false;
+                    }
                 }
             });
 
+
+            if (!job.IsCompleted) return;
+            
             commands.Dispose(job);
             results.Dispose(job);
+        }
+
+        protected override void OnStopRunning()
+        {
+            if (!BehaviourEventBus.IsClear)
+            {
+                _event.ClearEventBusCache();
+            }
         }
     }
 }

@@ -5,7 +5,7 @@ using Unity.Mathematics;
 using Unity.Transforms;
 using UnityEngine;
 
-namespace WOrldOfECS.Data
+namespace WorldOfECS.Data
 {
     [GenerateAuthoringComponent]
     public struct PhysicsCommandData : IComponentData

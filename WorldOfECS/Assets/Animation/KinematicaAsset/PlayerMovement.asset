@@ -1,0 +1,116 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67ddb658bcc363b4bbf299214cfbe711, type: 3}
+  m_Name: PlayerMovement
+  m_EditorClassIdentifier: 
+  animationLibrary: []
+  destinationAvatar: {fileID: 0}
+  timeHorizon: 1
+  sampleRate: 30
+  m_Data:
+    syncedWithBinary: 0
+    animationLibrary:
+    - m_PreBoundaryClip: {fileID: 0}
+      m_PreBoundaryClipGuid:
+        val0: 0
+        val1: 0
+        val2: 0
+        val3: 0
+      m_PostBoundaryClip: {fileID: -203655887218126122, guid: 5d64ce68084ac4c4b8a69545bf0dfd85,
+        type: 3}
+      m_PostBoundaryClipGuid:
+        val0: 1566887528
+        val1: -993785782
+        val2: 1167435448
+        val3: -2047013441
+      m_AnimationClipReference: {fileID: 0}
+      m_AnimationClipGuid:
+        val0: 1566887528
+        val1: -993785782
+        val2: 1167435448
+        val3: -2047013441
+      m_CachedClipName: Breathing Idle (1)
+      m_RetargetSourceAvatar: {fileID: 0}
+      tags:
+      - startTime: 0
+        duration: 19.833334
+        payload:
+          serializedData: '{}'
+          assemblyQualifiedTypeName: WorldOfECS.Animation.Tag.IdleTag, Assembly-CSharp-Editor,
+            Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+        name: 
+      - startTime: 0
+        duration: 19.833334
+        payload:
+          serializedData: '{}'
+          assemblyQualifiedTypeName: WorldOfECS.Animation.Tag.LocomotionTag, Assembly-CSharp-Editor,
+            Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+        name: 
+      markers: []
+      m_Asset: {fileID: 11400000}
+      m_CachedClipDuration: 19.833334
+    - m_PreBoundaryClip: {fileID: -203655887218126122, guid: 6672501edb2c94e4592dba1ba4f7b03c,
+        type: 3}
+      m_PreBoundaryClipGuid:
+        val0: 1718767646
+        val1: -1796941012
+        val2: 465186137
+        val3: 1018230692
+      m_PostBoundaryClip: {fileID: -203655887218126122, guid: 6672501edb2c94e4592dba1ba4f7b03c,
+        type: 3}
+      m_PostBoundaryClipGuid:
+        val0: 1718767646
+        val1: -1796941012
+        val2: 465186137
+        val3: 1018230692
+      m_AnimationClipReference: {fileID: 0}
+      m_AnimationClipGuid:
+        val0: 1718767646
+        val1: -1796941012
+        val2: 465186137
+        val3: 1018230692
+      m_CachedClipName: Walking
+      m_RetargetSourceAvatar: {fileID: 0}
+      tags:
+      - startTime: 0
+        duration: 1.7166667
+        payload:
+          serializedData: '{}'
+          assemblyQualifiedTypeName: WorldOfECS.Animation.Tag.LocomotionTag, Assembly-CSharp-Editor,
+            Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+        name: 
+      markers: []
+      m_Asset: {fileID: 11400000}
+      m_CachedClipDuration: 1.7166667
+    destinationAvatar: {fileID: 9000000, guid: 5fb1cac850ffc354e9f2af12d7488a86, type: 3}
+    metrics:
+    - name: New Metric
+      tagTypes:
+        m_TagTypeNames:
+        - WorldOfECS.Animation.Tag.IdleTag
+        - WorldOfECS.Animation.Tag.LocomotionTag
+      numPoses: 2
+      poseSampleRatio: 0.3333
+      joints:
+      - LowerLeg_R
+      - LowerLeg_L
+      - Neck
+      trajectorySampleRatio: 0.3333
+      trajectorySampleRange: -1
+      trajectoryDisplacements: 0
+      numAttempts: 1
+      numIterations: 25
+      minimumNumberSamples: 32
+      maximumNumberSamples: 256
+    timeHorizon: 1
+    sampleRate: 30
+  m_SerializeVersion: 2

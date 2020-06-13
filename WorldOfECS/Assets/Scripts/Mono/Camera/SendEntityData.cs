@@ -1,5 +1,5 @@
 ﻿using UnityEngine;
-using WOrldOfECS.Event;
+using WorldOfECS.Event;
 
 //used for sending the required data for raycasting. basic mono
 [RequireComponent(typeof(Camera))]

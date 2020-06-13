@@ -2,7 +2,7 @@
 using Unity.Mathematics;
 using UnityEngine.AI;
 
-namespace WOrldOfECS.Data
+namespace WorldOfECS.Data
 {
     [GenerateAuthoringComponent]
     public struct NavAgentData : IComponentData
@@ -10,5 +10,6 @@ namespace WOrldOfECS.Data
         public float3 destination;
         public float3 normal;
         public float distance;
+        public bool hasPath;
     }
 }

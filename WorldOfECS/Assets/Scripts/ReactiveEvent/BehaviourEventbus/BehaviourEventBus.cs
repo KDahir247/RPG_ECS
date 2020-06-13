@@ -5,7 +5,7 @@ using UniRx;
 using UnityEngine;
 
 
-namespace WOrldOfECS.Event
+namespace WorldOfECS.Event
 {
     public class BehaviourEventBus : IObservable<UnityEngine.Behaviour>
     {
