@@ -14,6 +14,8 @@ Hard
 Easy
  - Convert from ordinary raycast batching job scheduling to entity raycast job scheduling and jobify it (original raycast will only get GameObject not entities, and PhysicsWorld raycast will only get entity not gameObject)
 
+-Remove eventbus.cs and change it to MessageBroker
+
 current at lecture 18
 
 tip Setting the Blend Duration higher give the animation a better blending betweeen animation and make it less choppy
