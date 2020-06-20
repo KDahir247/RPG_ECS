@@ -1,10 +1,12 @@
 {
   "dependencies": {
+    "com.cysharp.unitask": "https://github.com/Cysharp/UniTask.git?path=src/UniTask/Assets/Plugins/UniTask",
     "com.havok.physics": "0.2.2-preview",
     "com.unity.burst": "1.3.1",
     "com.unity.cinemachine": "2.5.0",
     "com.unity.collab-proxy": "1.2.16",
     "com.unity.entities": "0.11.0-preview.7",
+    "com.unity.game.foundation": "0.4.0-preview.4",
     "com.unity.ide.rider": "1.1.4",
     "com.unity.ide.vscode": "1.2.0",
     "com.unity.inputsystem": "1.0.0",
@@ -47,5 +49,11 @@
     "com.unity.modules.vr": "1.0.0",
     "com.unity.modules.wind": "1.0.0",
     "com.unity.modules.xr": "1.0.0"
+  },
+  "lock": {
+    "com.cysharp.unitask": {
+      "revision": "HEAD",
+      "hash": "5bfff5bc244e4ecda13e427853a0a514ce525689"
+    }
   }
 }

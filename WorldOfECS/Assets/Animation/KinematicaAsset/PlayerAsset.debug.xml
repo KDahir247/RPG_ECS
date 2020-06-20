@@ -249,22 +249,22 @@
       <Destination firstFrame="595" numFrames="52" />
     </Segment>
     <Segment index="2" name="Cross Punch" tagIndex="3" numTags="2" markerIndex="-1" numMarkers="0" intervalIndex="2" numIntervals="1">
-      <Source firstFrame="0" numFrames="218" />
-      <Destination firstFrame="647" numFrames="109" />
+      <Source firstFrame="17" numFrames="109" />
+      <Destination firstFrame="647" numFrames="55" />
     </Segment>
   </Segments>
   <Tags>
     <Tag index="0" trait="0" segment="0" firstFrame="0" numFrames="595" />
     <Tag index="1" trait="1" segment="0" firstFrame="0" numFrames="595" />
     <Tag index="2" trait="1" segment="1" firstFrame="0" numFrames="52" />
-    <Tag index="3" trait="1" segment="2" firstFrame="0" numFrames="109" />
-    <Tag index="4" trait="2" segment="2" firstFrame="0" numFrames="109" />
+    <Tag index="3" trait="1" segment="2" firstFrame="0" numFrames="55" />
+    <Tag index="4" trait="2" segment="2" firstFrame="0" numFrames="55" />
   </Tags>
   <Markers />
   <Intervals>
     <Interval index="0" segment="0" firstFrame="0" numFrames="595" tagList="0" codeBook="0" />
     <Interval index="1" segment="1" firstFrame="0" numFrames="52" tagList="1" codeBook="1" />
-    <Interval index="2" segment="2" firstFrame="0" numFrames="109" tagList="2" codeBook="1" />
+    <Interval index="2" segment="2" firstFrame="0" numFrames="55" tagList="2" codeBook="1" />
   </Intervals>
   <TagLists>
     <TagList index="0" indices="0;1;" />

@@ -1,20 +1,17 @@
-﻿using UnityEngine;
-using WorldOfECS.Event;
+﻿using UniRx;
+using UnityEngine;
 
-//used for sending the required data for raycasting. basic mono
-[RequireComponent(typeof(Camera))]
-public class SendEntityData : MonoBehaviour
+//TODO remove for messagebroker
+
+namespace WorldOfECS.Event
 {
-    private readonly BehaviourEventBus _bus = new BehaviourEventBus();
-
-    private void Start()
+//used for sending the required data for raycasting. basic mono
+    [RequireComponent(typeof(Camera))]
+    public class SendEntityData : MonoBehaviour
     {
-        _bus.AddToBus(GetComponent<Camera>());
-    }
-
-    private void OnDisable()
-    {
-        if (!BehaviourEventBus.IsClear)
-            _bus.ClearEventBusCache();
+        private void Start()
+        {
+            MessageBroker.Default.Publish(GetComponent<Camera>());
+        }
     }
 }

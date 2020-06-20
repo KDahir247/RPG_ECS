@@ -1,0 +1,119 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67ddb658bcc363b4bbf299214cfbe711, type: 3}
+  m_Name: TargetAsset
+  m_EditorClassIdentifier: 
+  animationLibrary: []
+  destinationAvatar: {fileID: 0}
+  timeHorizon: 1
+  sampleRate: 30
+  m_Data:
+    syncedWithBinary: 1
+    animationLibrary:
+    - m_PreBoundaryClip: {fileID: -203655887218126122, guid: 54670278a42e85242a5c1c1605e701aa,
+        type: 3}
+      m_PreBoundaryClipGuid:
+        val0: 1416036984
+        val1: -2061196242
+        val2: 370957354
+        val3: -1442715899
+      m_PostBoundaryClip: {fileID: -203655887218126122, guid: 54670278a42e85242a5c1c1605e701aa,
+        type: 3}
+      m_PostBoundaryClipGuid:
+        val0: 1416036984
+        val1: -2061196242
+        val2: 370957354
+        val3: -1442715899
+      m_AnimationClipReference: {fileID: 0}
+      m_AnimationClipGuid:
+        val0: 1416036984
+        val1: -2061196242
+        val2: 370957354
+        val3: -1442715899
+      m_CachedClipName: Punching
+      m_RetargetSourceAvatar: {fileID: 0}
+      tags:
+      - startTime: 0
+        duration: 2.0666666
+        payload:
+          serializedData: '{}'
+          assemblyQualifiedTypeName: WorldOfECS.Animation.Tag.IdleTag, Assembly-CSharp-Editor,
+            Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+        name: 
+      - startTime: 0
+        duration: 2.0666666
+        payload:
+          serializedData: '{}'
+          assemblyQualifiedTypeName: WorldOfECS.Animation.Tag.LocomotionTag, Assembly-CSharp-Editor,
+            Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+        name: 
+      markers: []
+      m_Asset: {fileID: 11400000}
+      m_CachedClipDuration: 2.0666666
+    - m_PreBoundaryClip: {fileID: -203655887218126122, guid: 1fbab65279e05a448947358851024d54,
+        type: 3}
+      m_PreBoundaryClipGuid:
+        val0: 532330066
+        val1: 1514437088
+        val2: -2009774199
+        val3: 1414333009
+      m_PostBoundaryClip: {fileID: -203655887218126122, guid: 1fbab65279e05a448947358851024d54,
+        type: 3}
+      m_PostBoundaryClipGuid:
+        val0: 532330066
+        val1: 1514437088
+        val2: -2009774199
+        val3: 1414333009
+      m_AnimationClipReference: {fileID: 0}
+      m_AnimationClipGuid:
+        val0: 532330066
+        val1: 1514437088
+        val2: -2009774199
+        val3: 1414333009
+      m_CachedClipName: Cross Punch
+      m_RetargetSourceAvatar: {fileID: 0}
+      tags:
+      - startTime: 0
+        duration: 3.6333334
+        payload:
+          serializedData: '{}'
+          assemblyQualifiedTypeName: WorldOfECS.Animation.Tag.LocomotionTag, Assembly-CSharp-Editor,
+            Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+        name: 
+      markers: []
+      m_Asset: {fileID: 11400000}
+      m_CachedClipDuration: 3.6333334
+    destinationAvatar: {fileID: 9000000, guid: 5fb1cac850ffc354e9f2af12d7488a86, type: 3}
+    metrics:
+    - name: New Metric
+      tagTypes:
+        m_TagTypeNames:
+        - WorldOfECS.Animation.Tag.LocomotionTag
+        - WorldOfECS.Animation.Tag.CombatTag
+        - WorldOfECS.Animation.Tag.IdleTag
+        - Unity.Kinematica.Editor.DefaultTag
+      numPoses: 2
+      poseSampleRatio: 0.3333
+      joints:
+      - LowerLeg_R
+      - LowerLeg_L
+      - Neck
+      trajectorySampleRatio: 0.3333
+      trajectorySampleRange: -1
+      trajectoryDisplacements: 0
+      numAttempts: 1
+      numIterations: 25
+      minimumNumberSamples: 32
+      maximumNumberSamples: 256
+    timeHorizon: 1
+    sampleRate: 30
+  m_SerializeVersion: 2
