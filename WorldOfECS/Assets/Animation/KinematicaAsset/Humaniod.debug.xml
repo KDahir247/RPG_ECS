@@ -1,0 +1,295 @@
+<Binary>
+  <AnimationRig>
+    <Joint name="T-Pose" parent="-1">
+      <Position x="0" y="0" z="0" />
+      <Rotation x="0" y="0" z="0" w="1" />
+    </Joint>
+    <Joint name="Character_Soldier_01" parent="0">
+      <Position x="0" y="0" z="0" />
+      <Rotation x="0" y="0" z="0" w="1" />
+    </Joint>
+    <Joint name="Character_Soldier_02" parent="0">
+      <Position x="0" y="0" z="0" />
+      <Rotation x="0" y="0" z="0" w="1" />
+    </Joint>
+    <Joint name="Root" parent="0">
+      <Position x="7.861597E-07" y="0.002936173" z="0.01792929" />
+      <Rotation x="-6.799206E-14" y="-1.452377E-08" z="4.894121E-07" w="1" />
+    </Joint>
+    <Joint name="Hips" parent="3">
+      <Position x="0" y="0.8762761" z="0" />
+      <Rotation x="0.4611366" y="-0.5360532" z="-0.4611366" w="0.5360532" />
+    </Joint>
+    <Joint name="Item_CoinBag" parent="4">
+      <Position x="-0.002326965" y="0.009776496" z="-0.2078468" />
+      <Rotation x="-0.4611366" y="0.5360532" z="0.4611366" w="0.5360532" />
+    </Joint>
+    <Joint name="Item_Dagger" parent="4">
+      <Position x="-0.00695282" y="0.006025905" z="0.2118235" />
+      <Rotation x="-0.4611366" y="0.5360532" z="0.4611366" w="0.5360532" />
+    </Joint>
+    <Joint name="Spine_01" parent="4">
+      <Position x="-0.1039326" y="1.776357E-17" z="1.153884E-16" />
+      <Rotation x="0.9950197" y="-0.09967896" z="4.923335E-07" w="4.932092E-08" />
+    </Joint>
+    <Joint name="Spine_02" parent="7">
+      <Position x="-0.1815117" y="-3.685941E-15" z="-8.343865E-17" />
+      <Rotation x="0.9951862" y="-0.09800281" z="2.098773E-08" w="2.066806E-09" />
+    </Joint>
+    <Joint name="Spine_03" parent="8">
+      <Position x="-0.1790372" y="2.025047E-15" z="1.634255E-16" />
+      <Rotation x="0.9938103" y="-0.1110903" z="3.94671E-08" w="4.41172E-09" />
+    </Joint>
+    <Joint name="Clavicle_L" parent="9">
+      <Position x="-0.05801173" y="-0.04191448" z="-0.07447154" />
+      <Rotation x="-0.5801783" y="0.6309834" z="-0.3498197" w="-0.3779939" />
+    </Joint>
+    <Joint name="Shoulder_L" parent="10">
+      <Position x="-0.1319787" y="-8.526513E-16" z="2.04281E-16" />
+      <Rotation x="0.002438542" y="0.2439793" z="-0.001573329" w="0.9697761" />
+    </Joint>
+    <Joint name="Elbow_L" parent="11">
+      <Position x="-0.339474" y="-0.001449071" z="-0.001436264" />
+      <Rotation x="0.001654483" y="-0.001408902" z="0.002138656" w="0.9999954" />
+    </Joint>
+    <Joint name="Hand_L" parent="12">
+      <Position x="-0.2711453" y="2.842171E-16" z="-0.0003813643" />
+      <Rotation x="0.04193759" y="0.157607" z="0.001164093" w="0.9866104" />
+    </Joint>
+    <Joint name="Finger_01" parent="13">
+      <Position x="-0.09982526" y="-0.001159589" z="-0.0328334" />
+      <Rotation x="0.006211305" y="-0.1581669" z="0.006584885" w="0.9873709" />
+    </Joint>
+    <Joint name="Finger_02" parent="14">
+      <Position x="-0.04248815" y="-5.684342E-16" z="1.065814E-16" />
+      <Rotation x="0.002638594" y="-3.960407E-07" z="-9.728274E-08" w="0.9999965" />
+    </Joint>
+    <Joint name="Finger_03" parent="15">
+      <Position x="-0.03513327" y="2.842171E-16" z="1.776357E-16" />
+      <Rotation x="-0.01827467" y="1.714151E-07" z="4.685387E-08" w="0.999833" />
+    </Joint>
+    <Joint name="Finger_04" parent="16">
+      <Position x="-0.03003239" y="0" z="1.24345E-16" />
+      <Rotation x="0.01664637" y="0.09652533" z="-0.1691301" w="0.9807144" />
+    </Joint>
+    <Joint name="IndexFinger_01" parent="13">
+      <Position x="-0.1039656" y="0.003987151" z="0.0267265" />
+      <Rotation x="0.001334949" y="-0.1581971" z="0.005803305" w="0.9873896" />
+    </Joint>
+    <Joint name="IndexFinger_02" parent="18">
+      <Position x="-0.04093632" y="2.842171E-16" z="1.24345E-16" />
+      <Rotation x="-0.001159783" y="-1.215282E-07" z="3.601974E-06" w="0.9999993" />
+    </Joint>
+    <Joint name="IndexFinger_03" parent="19">
+      <Position x="-0.03791188" y="-8.526513E-16" z="8.881784E-17" />
+      <Rotation x="-0.006925739" y="2.287678E-08" z="-2.170246E-08" w="0.999976" />
+    </Joint>
+    <Joint name="IndexFinger_04" parent="20">
+      <Position x="-0.03779794" y="5.684342E-16" z="1.953993E-16" />
+      <Rotation x="-0.004519649" y="-0.02803993" z="-0.159068" w="0.986859" />
+    </Joint>
+    <Joint name="Thumb_01" parent="13">
+      <Position x="-0.03514048" y="-0.01170692" z="0.04505539" />
+      <Rotation x="0.07327739" y="0.1287781" z="0.2050924" w="0.9674625" />
+    </Joint>
+    <Joint name="Thumb_02" parent="22">
+      <Position x="-0.06370214" y="5.684342E-16" z="2.842171E-16" />
+      <Rotation x="-0.04063777" y="-8.585342E-07" z="6.851954E-08" w="0.999174" />
+    </Joint>
+    <Joint name="Thumb_03" parent="23">
+      <Position x="-0.0566557" y="0" z="3.552713E-16" />
+      <Rotation x="-0.03640326" y="-0.1520347" z="-0.2299953" w="0.9605532" />
+    </Joint>
+    <Joint name="Item_WarriorSholderArmor" parent="11">
+      <Position x="-0.04388766" y="0.04539169" z="-0.01252529" />
+      <Rotation x="0.0002046653" y="0.004953002" z="-0.04128572" w="0.9991351" />
+    </Joint>
+    <Joint name="Clavicle_R" parent="9">
+      <Position x="-0.05801534" y="-0.04191418" z="0.0744715" />
+      <Rotation x="0.6309791" y="0.5801829" z="0.378001" w="-0.349812" />
+    </Joint>
+    <Joint name="Shoulder_R" parent="26">
+      <Position x="0.1319786" y="6.473391E-06" z="4.735342E-08" />
+      <Rotation x="0.002441704" y="0.2439782" z="-0.001560561" w="0.9697764" />
+    </Joint>
+    <Joint name="Elbow_R" parent="27">
+      <Position x="0.3394746" y="0.001447586" z="0.001436264" />
+      <Rotation x="0.001654544" y="-0.001408814" z="0.002137511" w="0.9999954" />
+    </Joint>
+    <Joint name="Hand_R" parent="28">
+      <Position x="0.2711449" y="-5.684342E-16" z="0.0003813609" />
+      <Rotation x="0.04196258" y="0.1576068" z="0.001168745" w="0.9866093" />
+    </Joint>
+    <Joint name="Finger_011" parent="29">
+      <Position x="0.099825" y="0.00116" z="0.0328334" />
+      <Rotation x="0.006211366" y="-0.1581666" z="0.006584743" w="0.987371" />
+    </Joint>
+    <Joint name="Finger_021" parent="30">
+      <Position x="0.04248809" y="2.653441E-07" z="-1.978993E-08" />
+      <Rotation x="0.002638454" y="-5.395158E-08" z="-4.52229E-07" w="0.9999965" />
+    </Joint>
+    <Joint name="Finger_031" parent="31">
+      <Position x="0.03513324" y="-1.997848E-07" z="1.485361E-08" />
+      <Rotation x="-0.01827575" y="2.583404E-07" z="-1.630916E-05" w="0.999833" />
+    </Joint>
+    <Joint name="Finger_041" parent="32">
+      <Position x="0.03003113" y="1.133471E-06" z="3.591099E-07" />
+      <Rotation x="0.01664637" y="0.09652533" z="-0.1691301" w="0.9807144" />
+    </Joint>
+    <Joint name="IndexFinger_011" parent="29">
+      <Position x="0.103966" y="-0.00399" z="-0.0267265" />
+      <Rotation x="0.001339308" y="-0.1581975" z="0.005792195" w="0.9873896" />
+    </Joint>
+    <Joint name="IndexFinger_021" parent="34">
+      <Position x="0.04093591" y="9.698692E-07" z="-4.956748E-08" />
+      <Rotation x="-0.0011604" y="4.630073E-07" z="-2.351518E-05" w="0.9999993" />
+    </Joint>
+    <Joint name="IndexFinger_031" parent="35">
+      <Position x="0.03791213" y="3.249983E-06" z="-4.545292E-08" />
+      <Rotation x="-0.006924994" y="4.209079E-07" z="0.0001060132" w="0.999976" />
+    </Joint>
+    <Joint name="IndexFinger_041" parent="36">
+      <Position x="0.03779333" y="-5.265709E-06" z="-1.550738E-07" />
+      <Rotation x="-0.004519649" y="-0.02803993" z="-0.159068" w="0.986859" />
+    </Joint>
+    <Joint name="Thumb_011" parent="29">
+      <Position x="0.03514" y="0.01171" z="-0.0450554" />
+      <Rotation x="0.07327189" y="0.1287794" z="0.2051407" w="0.9674525" />
+    </Joint>
+    <Joint name="Thumb_021" parent="38">
+      <Position x="0.06370146" y="-7.811825E-06" z="4.363812E-07" />
+      <Rotation x="-0.04063055" y="2.371324E-06" z="-6.22815E-05" w="0.9991742" />
+    </Joint>
+    <Joint name="Thumb_031" parent="39">
+      <Position x="0.05665508" y="9.835502E-08" z="-2.027954E-07" />
+      <Rotation x="-0.03640326" y="-0.1520347" z="-0.2299953" w="0.9605532" />
+    </Joint>
+    <Joint name="Item_Sword" parent="9">
+      <Position x="0.0566835" y="0.1233579" z="-0.003462319" />
+      <Rotation x="0.4806345" y="-0.518643" z="0.4806345" w="0.518643" />
+    </Joint>
+    <Joint name="Item_SwordHolder" parent="9">
+      <Position x="1.331101" y="-0.1341632" z="1.0441E-14" />
+      <Rotation x="0.4806345" y="-0.518643" z="0.4806345" w="0.518643" />
+    </Joint>
+    <Joint name="Neck" parent="9">
+      <Position x="-0.1118897" y="1.367795E-15" z="6.087369E-17" />
+      <Rotation x="5.523637E-09" y="-7.425777E-09" z="0.04173336" w="0.9991288" />
+    </Joint>
+    <Joint name="Head" parent="43">
+      <Position x="-0.1216443" y="1.527667E-15" z="9.267944E-17" />
+      <Rotation x="0.458571" y="-0.5382496" z="0.458571" w="0.5382496" />
+    </Joint>
+    <Joint name="Eyebrows" parent="44">
+      <Position x="2.641328E-16" y="0.1265178" z="0.1227221" />
+      <Rotation x="-6.633583E-15" y="5.405924E-16" z="-5.139841E-16" w="1" />
+    </Joint>
+    <Joint name="Eyes" parent="44">
+      <Position x="2.316103E-16" y="0.09447606" z="0.1227221" />
+      <Rotation x="-6.633583E-15" y="5.405924E-16" z="-5.139841E-16" w="1" />
+    </Joint>
+    <Joint name="UpperLeg_L" parent="4">
+      <Position x="0.04115778" y="-0.02692075" z="0.09896711" />
+      <Rotation x="-0.7052637" y="0.05102162" z="-0.05934261" w="0.7046123" />
+    </Joint>
+    <Joint name="LowerLeg_L" parent="47">
+      <Position x="0.3993092" y="-3.805026E-07" z="-5.173639E-15" />
+      <Rotation x="0.6442977" y="0.02606083" z="-0.006083881" w="0.7643064" />
+    </Joint>
+    <Joint name="Ankle_L" parent="48">
+      <Position x="0.3771233" y="1.316949E-07" z="-8.411038E-07" />
+      <Rotation x="0.8553942" y="0.5109351" z="0.04891557" w="-0.06966592" />
+    </Joint>
+    <Joint name="Ball_L" parent="49">
+      <Position x="0.1128403" y="-1.684957E-08" z="2.309264E-16" />
+      <Rotation x="-1.227668E-08" y="6.075063E-08" z="-0.2700158" w="0.9628559" />
+    </Joint>
+    <Joint name="Toes_L" parent="50">
+      <Position x="0.0729575" y="-2.111089E-15" z="7.105427E-17" />
+      <Rotation x="-2.840371E-13" y="-0.7071068" z="-2.840371E-13" w="0.7071068" />
+    </Joint>
+    <Joint name="UpperLeg_R" parent="4">
+      <Position x="0.04115769" y="-0.0269207" z="-0.09896705" />
+      <Rotation x="0.05100287" y="0.705265" z="-0.704614" w="-0.05932234" />
+    </Joint>
+    <Joint name="LowerLeg_R" parent="52">
+      <Position x="-0.399309" y="-7.105427E-17" z="-4.218847E-15" />
+      <Rotation x="0.6442965" y="0.0261059" z="-0.006121923" w="0.7643057" />
+    </Joint>
+    <Joint name="Ankle_R" parent="53">
+      <Position x="-0.3771235" y="-3.801403E-15" z="-1.421085E-16" />
+      <Rotation x="0.8553782" y="0.5109619" z="0.0489181" w="-0.06966471" />
+    </Joint>
+    <Joint name="Ball_R" parent="54">
+      <Position x="-0.1128404" y="1.336709E-15" z="-1.776357E-17" />
+      <Rotation x="-3.587082E-09" y="-2.437273E-08" z="-0.2700158" w="0.9628559" />
+    </Joint>
+    <Joint name="Toes_R" parent="55">
+      <Position x="-0.07295756" y="-2.249867E-15" z="-1.776357E-17" />
+      <Rotation x="2.510615E-14" y="-0.7071068" z="2.510615E-14" w="0.7071068" />
+    </Joint>
+  </AnimationRig>
+  <Types>
+    <Type name="Idle" size="1" />
+    <Type name="Locomotion" size="1" />
+    <Type name="Combat" size="1" />
+    <Type name="Death" size="1" />
+  </Types>
+  <Traits>
+    <Trait index="0" type="Idle" payload="00" />
+    <Trait index="1" type="Locomotion" payload="00" />
+    <Trait index="2" type="Combat" payload="00" />
+    <Trait index="3" type="Death" payload="00" />
+  </Traits>
+  <Segments>
+    <Segment index="0" name="Breathing Idle" tagIndex="0" numTags="2" markerIndex="-1" numMarkers="0" intervalIndex="0" numIntervals="1">
+      <Source firstFrame="0" numFrames="1190" />
+      <Destination firstFrame="0" numFrames="595" />
+    </Segment>
+    <Segment index="1" name="Walking" tagIndex="2" numTags="1" markerIndex="-1" numMarkers="0" intervalIndex="1" numIntervals="1">
+      <Source firstFrame="0" numFrames="103" />
+      <Destination firstFrame="595" numFrames="52" />
+    </Segment>
+    <Segment index="2" name="Cross Punch" tagIndex="3" numTags="2" markerIndex="-1" numMarkers="0" intervalIndex="2" numIntervals="1">
+      <Source firstFrame="17" numFrames="109" />
+      <Destination firstFrame="647" numFrames="55" />
+    </Segment>
+    <Segment index="3" name="mixamo.com" tagIndex="5" numTags="2" markerIndex="-1" numMarkers="0" intervalIndex="3" numIntervals="1">
+      <Source firstFrame="0" numFrames="197" />
+      <Destination firstFrame="702" numFrames="99" />
+    </Segment>
+  </Segments>
+  <Tags>
+    <Tag index="0" trait="0" segment="0" firstFrame="0" numFrames="595" />
+    <Tag index="1" trait="1" segment="0" firstFrame="0" numFrames="595" />
+    <Tag index="2" trait="1" segment="1" firstFrame="0" numFrames="52" />
+    <Tag index="3" trait="1" segment="2" firstFrame="0" numFrames="55" />
+    <Tag index="4" trait="2" segment="2" firstFrame="0" numFrames="55" />
+    <Tag index="5" trait="3" segment="3" firstFrame="0" numFrames="99" />
+    <Tag index="6" trait="1" segment="3" firstFrame="0" numFrames="99" />
+  </Tags>
+  <Markers />
+  <Intervals>
+    <Interval index="0" segment="0" firstFrame="0" numFrames="595" tagList="0" codeBook="0" />
+    <Interval index="1" segment="1" firstFrame="0" numFrames="52" tagList="1" codeBook="1" />
+    <Interval index="2" segment="2" firstFrame="0" numFrames="55" tagList="2" codeBook="1" />
+    <Interval index="3" segment="3" firstFrame="0" numFrames="99" tagList="3" codeBook="1" />
+  </Intervals>
+  <TagLists>
+    <TagList index="0" indices="0;1;" />
+    <TagList index="1" indices="2;" />
+    <TagList index="2" indices="3;4;" />
+    <TagList index="3" indices="5;6;" />
+  </TagLists>
+  <Metrics>
+    <Metric index="0" poseTimeSpan="0.06666667">
+      <Joint name="LowerLeg_R" index="53" />
+      <Joint name="LowerLeg_L" index="48" />
+      <Joint name="Neck" index="43" />
+    </Metric>
+  </Metrics>
+  <CodeBooks>
+    <CodeBook index="0" metric="0" trait="0" />
+    <CodeBook index="1" metric="0" trait="1" />
+  </CodeBooks>
+</Binary>

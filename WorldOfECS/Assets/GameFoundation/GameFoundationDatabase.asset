@@ -28,7 +28,15 @@ MonoBehaviour:
   m_Name: Detail_unarmed_Stats
   m_EditorClassIdentifier: 
   m_ItemDefinition: {fileID: 4946221031243906723}
-  m_StatEntries: []
+  m_StatEntries:
+  - stat: {fileID: -1245332247564459335}
+    value:
+      m_Type: 1
+      m_IntValue: 1084227584
+  - stat: {fileID: 8739547122569770646}
+    value:
+      m_Type: 1
+      m_IntValue: 1069379748
 --- !u!114 &-5574116494081787977
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43,6 +51,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_StatDefinitions:
   - {fileID: 8739547122569770646}
+  - {fileID: -1245332247564459335}
   m_Database: {fileID: 11400000}
 --- !u!114 &-4867672056541524535
 MonoBehaviour:

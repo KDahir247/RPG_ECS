@@ -114,15 +114,15 @@ MonoBehaviour:
       m_CachedClipName: Cross Punch
       m_RetargetSourceAvatar: {fileID: 0}
       tags:
-      - startTime: 0
-        duration: 3.6333334
+      - startTime: 0.28333333
+        duration: 1.8166666
         payload:
           serializedData: '{}'
           assemblyQualifiedTypeName: WorldOfECS.Animation.Tag.LocomotionTag, Assembly-CSharp-Editor,
             Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
         name: 
-      - startTime: 0
-        duration: 3.6333334
+      - startTime: 0.28333333
+        duration: 1.8166666
         payload:
           serializedData: '{}'
           assemblyQualifiedTypeName: WorldOfECS.Animation.Tag.CombatTag, Assembly-CSharp-Editor,
