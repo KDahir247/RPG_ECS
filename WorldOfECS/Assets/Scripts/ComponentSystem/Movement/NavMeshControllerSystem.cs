@@ -64,7 +64,7 @@ namespace WorldOfECS.ComponentSystem
                 .ForEach((NavMeshAgent navAgent,
                     ref RaycastData raycastData) =>
                 {
-                    if (!raycastData.hasReached)
+                    if (!raycastData.hasReached && raycastData.hit.collider)
                     {
                         navAgent.CalculatePath(raycastData.hit.point, _path);
 
