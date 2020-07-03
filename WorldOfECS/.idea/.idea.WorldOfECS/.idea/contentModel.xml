@@ -365,7 +365,6 @@
           <e p="JobSystem" t="Include">
             <e p="Combat" t="Include">
               <e p="CombatJobSystem.cs" t="Include" />
-              <e p="CombatTemplateSystem.cs" t="Include" />
             </e>
             <e p="Core" t="Include">
               <e p="DistanceJobSystem.cs" t="Include" />

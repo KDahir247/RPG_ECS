@@ -57,25 +57,25 @@ namespace WorldOfECS.ComponentSystem
 
                         var raycastCommandJobHandle =
                             RaycastCommand.ScheduleBatch(commands, results, physicsCommandData.minimumCommandPerJob);
-                        
+
                         raycastCommandJobHandle.Complete();
-                        
+
                         currentTarget[0] = results[0].collider != null ? results[0] : phyiscsCastData.hit;
-                        
-                        if(currentTarget[0].collider)
+
+                        if (currentTarget[0].collider)
                         {
                             if (currentTarget[0].collider.CompareTag("Movable"))
                             {
                                 phyiscsCastData.status = Status.Movable;
                                 phyiscsCastData.stoppingDistance = 0;
                             }
-                            else if(currentTarget[0].collider.CompareTag("Targetable"))
+                            else if (currentTarget[0].collider.CompareTag("Targetable"))
                             {
                                 phyiscsCastData.status = Status.Targetable;
                                 phyiscsCastData.stoppingDistance = 1.2f;
                             }
                         }
-                        
+
                         commands.Dispose(raycastCommandJobHandle);
                         results.Dispose(raycastCommandJobHandle);
                     }
@@ -88,9 +88,7 @@ namespace WorldOfECS.ComponentSystem
                     ref PhysicsCastData physicsCastBurstData,
                     in Translation position) =>
                 {
-                    
                     if (currentTarget[0].point != Vector3.zero)
-                    {
                         if (math.distance(currentTarget[0].point, position.Value) >
                             physicsCastBurstData.stoppingDistance)
                         {
@@ -100,8 +98,6 @@ namespace WorldOfECS.ComponentSystem
                             physicsCastBurstData.hit.distance = currentTarget[0].distance;
                             physicsCastBurstData.hit.point = currentTarget[0].point;
                         }
-                    }
-
                 }).Schedule(inputDeps);
 
             jobHandle.Complete();

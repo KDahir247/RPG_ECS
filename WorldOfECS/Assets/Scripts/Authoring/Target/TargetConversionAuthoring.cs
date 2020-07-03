@@ -12,6 +12,11 @@ namespace WorldOfECS.Animation
     [RequiresEntityConversion]
     public class TargetConversionAuthoring : MonoBehaviour, IConvertGameObjectToEntity
     {
+        public void Convert(Entity entity, EntityManager dstManager, GameObjectConversionSystem conversionSystem)
+        {
+            InitializeDataStack(entity, ref dstManager);
+        }
+
         private void InitializeDataStack(in Entity entity, ref EntityManager dstManager)
         {
             dstManager.AddComponents(entity, new ComponentTypes(
@@ -43,13 +48,6 @@ namespace WorldOfECS.Animation
                 hasTarget = false
             });
         }
-        
-        public void Convert(Entity entity, EntityManager dstManager, GameObjectConversionSystem conversionSystem)
-        {
-            InitializeDataStack(entity,ref dstManager);
-        }
-
-        
 
 
         //Play Idle Animation

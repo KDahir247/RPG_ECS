@@ -1,5 +1,4 @@
-﻿using System;
-using Unity.Entities;
+﻿using Unity.Entities;
 using Unity.Kinematica;
 using Unity.Transforms;
 using UnityEngine;
@@ -15,7 +14,17 @@ namespace WorldOfECS.Authoring
         //TEST TODO WORKS
         private Entity _entity;
         private EntityManager _manager;
-        
+
+        public void Convert(Entity entity, EntityManager dstManager, GameObjectConversionSystem conversionSystem)
+        {
+            InitializeDataStack(entity, ref dstManager);
+
+
+            //testing TODO WORKS
+            _entity = entity;
+            _manager = dstManager;
+        }
+
         private void InitializeDataStack(in Entity entity, ref EntityManager dstManager)
         {
             dstManager.AddComponents(entity, new ComponentTypes(
@@ -43,16 +52,6 @@ namespace WorldOfECS.Authoring
                 hasTarget = false
             });
         }
-        
-        public void Convert(Entity entity, EntityManager dstManager, GameObjectConversionSystem conversionSystem)
-        {
-            InitializeDataStack(entity, ref dstManager);
-            
-            
-            //testing TODO WORKS
-            _entity = entity;
-            _manager = dstManager;
-        }
 
         //Play Idle Animation
         private void Awake()
@@ -69,7 +68,6 @@ namespace WorldOfECS.Authoring
         {
             //TODO WORKS
             Debug.Log(_manager.GetComponentObject<Transform>(_entity).gameObject.name);
-
         }
     }
 }

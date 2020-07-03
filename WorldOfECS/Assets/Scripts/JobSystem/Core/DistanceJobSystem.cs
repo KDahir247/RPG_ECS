@@ -71,7 +71,7 @@ namespace WorldOfECS.ComponentSystem
 
                     //the stopping distance;
                     physicsCastData.stoppingDistance = 1.5f;
-                    
+
                     physicsCastData.hit.point = distanceHit[0].Position;
                     physicsCastData.hit.distance = distanceHit[0].Distance;
 

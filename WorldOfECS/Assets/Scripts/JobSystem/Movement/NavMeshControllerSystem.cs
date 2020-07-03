@@ -3,7 +3,6 @@ using Unity.Entities;
 using Unity.Jobs;
 using Unity.Mathematics;
 using Unity.Transforms;
-using UnityEngine;
 using UnityEngine.AI;
 using WorldOfECS.Binding;
 using WorldOfECS.Data;
@@ -37,13 +36,11 @@ namespace WorldOfECS.ComponentSystem
                             agent.SetDestination(physicsCastData.hit.point);
                         }
                     }
-                    
-                    if(physicsCastData.status == Status.Targetable && !physicsCastData.hasReached)
+
+                    if (physicsCastData.status == Status.Targetable && !physicsCastData.hasReached)
                         binding.movementEventBind.Value = false;
                     else if (physicsCastData.status != Status.Targetable)
                         binding.movementEventBind.Value = physicsCastData.hasReached;
-                    
-                    
                 }).Run();
 
             var jobHandle = Entities
@@ -66,7 +63,7 @@ namespace WorldOfECS.ComponentSystem
                         rotation.Value = matrix.Rotation;
                     }
                 }).Schedule(inputDeps);
-            
+
             return jobHandle;
         }
     }

@@ -13,25 +13,25 @@ namespace WorldOfECS.Binding
 {
     public class EventBinding : MonoBehaviour
     {
-        public ReactiveProperty<bool> movementEventBind = new ReactiveProperty<bool>(true);
-        public ReactiveProperty<bool> combatEventBind = new ReactiveProperty<bool>(false);
         private readonly CompositeDisposable _disposable = new CompositeDisposable();
-        
+
         private IDisposable _attackEvent;
         private Kinematica _kinematica;
-        
-        private RPGAttribute _targetAttribute;
-        public EntityManager DstManager { get; set; }
-        public PhysicsCastData CastData { get; set; }
 
-        [SerializeField]
-        private ScriptableEquipement equipement;
-        
+        private InventoryItem _mainWeapon;
+
         //game foundation
         private MemoryDataLayer _memoryDataLayer;
 
-        private InventoryItem _mainWeapon;
-        
+        private RPGAttribute _targetAttribute;
+        public ReactiveProperty<bool> combatEventBind = new ReactiveProperty<bool>(false);
+
+        [SerializeField] private ScriptableEquipement equipement;
+
+        public ReactiveProperty<bool> movementEventBind = new ReactiveProperty<bool>(true);
+        public EntityManager DstManager { get; set; }
+        public PhysicsCastData CastData { get; set; }
+
         private void Awake()
         {
             CombatEvent();
@@ -65,17 +65,13 @@ namespace WorldOfECS.Binding
                     .Subscribe(isIdle =>
                     {
                         if (isIdle)
-                        {
                             //Idle Event Call
                             //play idle audio
                             IdleAnimation();
-                        }
                         else
-                        {
                             //WalkEventCall
                             //play walk audio
                             WalkAnimation();
-                        }
                     }).AddTo(_disposable);
             }
 
@@ -102,8 +98,8 @@ namespace WorldOfECS.Binding
         {
             if (combatEventBind.Value == false)
             {
-                ref MotionSynthesizer motionSynthesizer = ref _kinematica.Synthesizer.Ref;
-            
+                ref var motionSynthesizer = ref _kinematica.Synthesizer.Ref;
+
                 motionSynthesizer
                     .Action()
                     .Push(motionSynthesizer.Query
@@ -114,8 +110,8 @@ namespace WorldOfECS.Binding
 
         private void WalkAnimation()
         {
-            ref MotionSynthesizer motionSynthesizer = ref _kinematica.Synthesizer.Ref;
-            
+            ref var motionSynthesizer = ref _kinematica.Synthesizer.Ref;
+
             motionSynthesizer
                 .Action()
                 .Push(motionSynthesizer.Query
@@ -123,13 +119,13 @@ namespace WorldOfECS.Binding
                     .Except(Idle.Default));
         }
 
-        
+
         private void StartAttack()
         {
             movementEventBind.Value = true;
-            
-            ref MotionSynthesizer motionSynthesizer = ref _kinematica.Synthesizer.Ref;
-            
+
+            ref var motionSynthesizer = ref _kinematica.Synthesizer.Ref;
+
             motionSynthesizer
                 .Action()
                 .Push(motionSynthesizer.Query
@@ -137,20 +133,16 @@ namespace WorldOfECS.Binding
                     .And(Combat.Default));
         }
 
-        
+
         private void UpdateAttack()
         {
             //using both unity's new physics and original physics. 
             //not compatible with each other, which is handle by the conditional
             if (CastData.hit.collider == null)
-            {
                 _targetAttribute = DstManager.GetComponentObject<RPGAttribute>(CastData.entity);
-            }
             else
-            {
                 _targetAttribute = CastData.hit.transform.GetComponent<RPGAttribute>();
-            }
-            
+
             float attackSpeed = 1;
             if (_mainWeapon.HasStat("attackSpeed")) attackSpeed = _mainWeapon.GetStat("attackSpeed");
 
@@ -159,37 +151,33 @@ namespace WorldOfECS.Binding
                 {
                     float damage = 0;
                     if (_mainWeapon.HasStat("damage")) damage = _mainWeapon.GetStat("damage");
-                    
+
                     return damage;
                 }).Where(damage => _targetAttribute.TakeDamage(damage) == false)
                 .Subscribe(damage =>
                 {
-                    
 //                    //when enemy dies
-                    ref MotionSynthesizer motionSynthesizer = ref _kinematica.Synthesizer.Ref;
-                    
+                    ref var motionSynthesizer = ref _kinematica.Synthesizer.Ref;
+
                     motionSynthesizer
                         .Action()
                         .Push(motionSynthesizer.Query
                             .Where(Locomotion.Default)
                             .And(Idle.Default));
-                    
+
                     //Dispose of this interval event since the enemy is dead
                     EndAttack();
-                    
                 }).AddTo(_disposable);
-
-          
         }
-        
+
         private void EndAttack()
         {
             _attackEvent?.Dispose();
         }
-        
+
         private void OnDestroy()
         {
-            if(!_disposable.IsDisposed)
+            if (!_disposable.IsDisposed)
                 _disposable.Dispose();
         }
     }

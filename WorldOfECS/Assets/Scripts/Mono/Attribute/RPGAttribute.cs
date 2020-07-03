@@ -14,7 +14,7 @@ namespace WorldOfECS.Core
         private Collider col;
 
         [SerializeField] private Stat stat;
-        
+
         private void Start()
         {
             _kinematica = gameObject.GetComponent<Kinematica>();
