@@ -346,31 +346,33 @@
               <e p="TargetConversionAuthoring.cs" t="Include" />
             </e>
           </e>
-          <e p="ComponentSystem" t="Include">
-            <e p="Core" t="Include">
-              <e p="RaycastCommandBufferSystem.cs" t="Include" />
-              <e p="SpherecastCommandBufferSystem.cs" t="Include" />
-            </e>
-            <e p="Movement" t="Include">
-              <e p="NavMeshControllerSystem.cs" t="Include" />
-            </e>
-          </e>
           <e p="Data" t="Include">
             <e p="Core" t="Include">
-              <e p="RaycastData.cs" t="Include" />
+              <e p="DistanceInputCommandData.cs" t="Include" />
+              <e p="PhysicsCastData.cs" t="Include" />
               <e p="RayPhysicsCommandData.cs" t="Include" />
-              <e p="SphereCastData.cs" t="Include" />
-              <e p="SpherePhysicsCommandData.cs" t="Include" />
+            </e>
+            <e p="Navigation" t="Include">
+              <e p="CombatData.cs" t="Include" />
+              <e p="MovementData.cs" t="Include" />
             </e>
           </e>
           <e p="Foundation" t="Include">
             <e p="Combat" t="Include">
-              <e p="CombatListener.cs" t="Include" />
+              <e p="EventBinding.cs" t="Include" />
             </e>
           </e>
           <e p="JobSystem" t="Include">
             <e p="Combat" t="Include">
               <e p="CombatJobSystem.cs" t="Include" />
+              <e p="CombatTemplateSystem.cs" t="Include" />
+            </e>
+            <e p="Core" t="Include">
+              <e p="DistanceJobSystem.cs" t="Include" />
+              <e p="RaycastCommandBufferSystem.cs" t="Include" />
+            </e>
+            <e p="Movement" t="Include">
+              <e p="NavMeshControllerSystem.cs" t="Include" />
             </e>
           </e>
           <e p="Mono" t="Include">
@@ -388,6 +390,9 @@
             <e p="Eventbus" t="Include">
               <e p="BehaviourEventBus.cs" t="Include" />
             </e>
+          </e>
+          <e p="ScriptableObject" t="Include">
+            <e p="ScriptableEquipement.cs" t="Include" />
           </e>
         </e>
       </e>

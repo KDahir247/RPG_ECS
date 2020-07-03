@@ -101,6 +101,21 @@ PrefabInstance:
       propertyPath: stat.healthPoint
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 7826405522743451099, guid: e66018797b6789b4dbb3c21a6dfe0f06,
+        type: 3}
+      propertyPath: m_Radius
+      value: 0.27953815
+      objectReference: {fileID: 0}
+    - target: {fileID: 7826405522743451099, guid: e66018797b6789b4dbb3c21a6dfe0f06,
+        type: 3}
+      propertyPath: m_Center.x
+      value: -0.010593414
+      objectReference: {fileID: 0}
+    - target: {fileID: 7826405522743451099, guid: e66018797b6789b4dbb3c21a6dfe0f06,
+        type: 3}
+      propertyPath: m_Center.z
+      value: -0.0042151213
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
     - {fileID: 0}

@@ -246,33 +246,33 @@
       <Source firstFrame="0" numFrames="1190" />
       <Destination firstFrame="0" numFrames="595" />
     </Segment>
-    <Segment index="1" name="Walking" tagIndex="2" numTags="1" markerIndex="-1" numMarkers="0" intervalIndex="1" numIntervals="1">
-      <Source firstFrame="0" numFrames="103" />
-      <Destination firstFrame="595" numFrames="52" />
+    <Segment index="1" name="Running" tagIndex="2" numTags="1" markerIndex="-1" numMarkers="0" intervalIndex="1" numIntervals="1">
+      <Source firstFrame="0" numFrames="76" />
+      <Destination firstFrame="595" numFrames="38" />
     </Segment>
     <Segment index="2" name="Cross Punch" tagIndex="3" numTags="2" markerIndex="-1" numMarkers="0" intervalIndex="2" numIntervals="1">
-      <Source firstFrame="17" numFrames="109" />
-      <Destination firstFrame="647" numFrames="55" />
+      <Source firstFrame="16" numFrames="123" />
+      <Destination firstFrame="633" numFrames="62" />
     </Segment>
-    <Segment index="3" name="mixamo.com" tagIndex="5" numTags="2" markerIndex="-1" numMarkers="0" intervalIndex="3" numIntervals="1">
+    <Segment index="3" name="Death" tagIndex="5" numTags="2" markerIndex="-1" numMarkers="0" intervalIndex="3" numIntervals="1">
       <Source firstFrame="0" numFrames="197" />
-      <Destination firstFrame="702" numFrames="99" />
+      <Destination firstFrame="695" numFrames="99" />
     </Segment>
   </Segments>
   <Tags>
     <Tag index="0" trait="0" segment="0" firstFrame="0" numFrames="595" />
     <Tag index="1" trait="1" segment="0" firstFrame="0" numFrames="595" />
-    <Tag index="2" trait="1" segment="1" firstFrame="0" numFrames="52" />
-    <Tag index="3" trait="1" segment="2" firstFrame="0" numFrames="55" />
-    <Tag index="4" trait="2" segment="2" firstFrame="0" numFrames="55" />
-    <Tag index="5" trait="3" segment="3" firstFrame="0" numFrames="99" />
-    <Tag index="6" trait="1" segment="3" firstFrame="0" numFrames="99" />
+    <Tag index="2" trait="1" segment="1" firstFrame="0" numFrames="38" />
+    <Tag index="3" trait="1" segment="2" firstFrame="0" numFrames="62" />
+    <Tag index="4" trait="2" segment="2" firstFrame="0" numFrames="62" />
+    <Tag index="5" trait="1" segment="3" firstFrame="0" numFrames="99" />
+    <Tag index="6" trait="3" segment="3" firstFrame="0" numFrames="99" />
   </Tags>
   <Markers />
   <Intervals>
     <Interval index="0" segment="0" firstFrame="0" numFrames="595" tagList="0" codeBook="0" />
-    <Interval index="1" segment="1" firstFrame="0" numFrames="52" tagList="1" codeBook="1" />
-    <Interval index="2" segment="2" firstFrame="0" numFrames="55" tagList="2" codeBook="1" />
+    <Interval index="1" segment="1" firstFrame="0" numFrames="38" tagList="1" codeBook="1" />
+    <Interval index="2" segment="2" firstFrame="0" numFrames="62" tagList="2" codeBook="1" />
     <Interval index="3" segment="3" firstFrame="0" numFrames="99" tagList="3" codeBook="1" />
   </Intervals>
   <TagLists>

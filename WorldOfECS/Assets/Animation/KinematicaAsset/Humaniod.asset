@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 67ddb658bcc363b4bbf299214cfbe711, type: 3}
-  m_Name: PlayerAsset
+  m_Name: Humaniod
   m_EditorClassIdentifier: 
   animationLibrary: []
   destinationAvatar: {fileID: 0}
@@ -58,31 +58,31 @@ MonoBehaviour:
       markers: []
       m_Asset: {fileID: 11400000}
       m_CachedClipDuration: 19.833334
-    - m_PreBoundaryClip: {fileID: -203655887218126122, guid: 6672501edb2c94e4592dba1ba4f7b03c,
+    - m_PreBoundaryClip: {fileID: -203655887218126122, guid: e1954ee84d87f0e44b6f5da5578d8a21,
         type: 3}
       m_PreBoundaryClipGuid:
-        val0: 1718767646
-        val1: -1796941012
-        val2: 465186137
-        val3: 1018230692
-      m_PostBoundaryClip: {fileID: -203655887218126122, guid: 6672501edb2c94e4592dba1ba4f7b03c,
+        val0: -510308632
+        val1: -253473401
+        val2: -1520603317
+        val3: 562728279
+      m_PostBoundaryClip: {fileID: -203655887218126122, guid: e1954ee84d87f0e44b6f5da5578d8a21,
         type: 3}
       m_PostBoundaryClipGuid:
-        val0: 1718767646
-        val1: -1796941012
-        val2: 465186137
-        val3: 1018230692
+        val0: -510308632
+        val1: -253473401
+        val2: -1520603317
+        val3: 562728279
       m_AnimationClipReference: {fileID: 0}
       m_AnimationClipGuid:
-        val0: 1718767646
-        val1: -1796941012
-        val2: 465186137
-        val3: 1018230692
-      m_CachedClipName: Walking
+        val0: -510308632
+        val1: -253473401
+        val2: -1520603317
+        val3: 562728279
+      m_CachedClipName: Running
       m_RetargetSourceAvatar: {fileID: 0}
       tags:
       - startTime: 0
-        duration: 1.7166667
+        duration: 1.2666667
         payload:
           serializedData: '{}'
           assemblyQualifiedTypeName: WorldOfECS.Animation.Tag.LocomotionTag, Assembly-CSharp-Editor,
@@ -90,7 +90,7 @@ MonoBehaviour:
         name: 
       markers: []
       m_Asset: {fileID: 11400000}
-      m_CachedClipDuration: 1.7166667
+      m_CachedClipDuration: 1.2666667
     - m_PreBoundaryClip: {fileID: -203655887218126122, guid: 1fbab65279e05a448947358851024d54,
         type: 3}
       m_PreBoundaryClipGuid:
@@ -114,15 +114,15 @@ MonoBehaviour:
       m_CachedClipName: Cross Punch
       m_RetargetSourceAvatar: {fileID: 0}
       tags:
-      - startTime: 0.28333333
-        duration: 1.8166666
+      - startTime: 0.26666668
+        duration: 2.05
         payload:
           serializedData: '{}'
           assemblyQualifiedTypeName: WorldOfECS.Animation.Tag.LocomotionTag, Assembly-CSharp-Editor,
             Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
         name: 
-      - startTime: 0.28333333
-        duration: 1.8166666
+      - startTime: 0.26666668
+        duration: 2.05
         payload:
           serializedData: '{}'
           assemblyQualifiedTypeName: WorldOfECS.Animation.Tag.CombatTag, Assembly-CSharp-Editor,
@@ -131,6 +131,44 @@ MonoBehaviour:
       markers: []
       m_Asset: {fileID: 11400000}
       m_CachedClipDuration: 3.6333334
+    - m_PreBoundaryClip: {fileID: 0}
+      m_PreBoundaryClipGuid:
+        val0: 0
+        val1: 0
+        val2: 0
+        val3: 0
+      m_PostBoundaryClip: {fileID: 0}
+      m_PostBoundaryClipGuid:
+        val0: 0
+        val1: 0
+        val2: 0
+        val3: 0
+      m_AnimationClipReference: {fileID: 0}
+      m_AnimationClipGuid:
+        val0: 200938755
+        val1: 1009029180
+        val2: -1006249670
+        val3: -725235451
+      m_CachedClipName: Death
+      m_RetargetSourceAvatar: {fileID: 0}
+      tags:
+      - startTime: 0
+        duration: 3.2833333
+        payload:
+          serializedData: '{}'
+          assemblyQualifiedTypeName: WorldOfECS.Animation.Tag.LocomotionTag, Assembly-CSharp-Editor,
+            Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+        name: 
+      - startTime: 0
+        duration: 3.2833338
+        payload:
+          serializedData: '{}'
+          assemblyQualifiedTypeName: WorldOfECS.Animation.Tag.DeathTag, Assembly-CSharp-Editor,
+            Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+        name: 
+      markers: []
+      m_Asset: {fileID: 11400000}
+      m_CachedClipDuration: 3.2833333
     destinationAvatar: {fileID: 9000000, guid: 5fb1cac850ffc354e9f2af12d7488a86, type: 3}
     metrics:
     - name: New Metric

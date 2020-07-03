@@ -3,20 +3,18 @@ using Unity.Kinematica;
 using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.AI;
-using WorldOfECS.Animation.Annotation;
 
 namespace WorldOfECS.Core
 {
     public class RPGAttribute : MonoBehaviour
     {
         private NavMeshAgent _agent;
-
         private Kinematica _kinematica;
 
         private Collider col;
 
         [SerializeField] private Stat stat;
-
+        
         private void Start()
         {
             _kinematica = gameObject.GetComponent<Kinematica>();
@@ -48,16 +46,24 @@ namespace WorldOfECS.Core
                 return true;
             }
 
-            col.enabled = false;
-            _agent.enabled = false;
+//
+//            if (col)
+//            {
+//                col.enabled = false;
+//            }
+//            
+//            _agent.isStopped = true;
+//            _agent.enabled = false;
+//            
+//            
+//            _kinematica.applyRootMotion = true;
+//            
+//            motionSynthesizer
+//                .Action()
+//                .Push(motionSynthesizer.Query
+//                    .Where(Locomotion.Default)
+//                    .And(Death.Default));
 
-            motionSynthesizer
-                .Action()
-                .Push(motionSynthesizer.Query
-                    .Where(Locomotion.Default)
-                    .And(Death.Default));
-
-            _kinematica.applyRootMotion = true;
 
             return false;
         }
@@ -67,5 +73,6 @@ namespace WorldOfECS.Core
     public struct Stat
     {
         public float healthPoint;
+        public float Mp;
     }
 }

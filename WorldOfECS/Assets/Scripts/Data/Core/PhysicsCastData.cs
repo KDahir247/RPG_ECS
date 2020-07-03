@@ -1,5 +1,7 @@
-﻿using Unity.Entities;
+﻿using System;
+using Unity.Entities;
 using UnityEngine;
+
 namespace WorldOfECS.Data
 {
     public enum Status
@@ -7,16 +9,22 @@ namespace WorldOfECS.Data
         Nil,
         Idle, // for npc, and enemies
         Movable,
-        Targetable,
+        Targetable
     }
-    
-    
+
+
+    //TODO used by every script
+    [Serializable]
     [GenerateAuthoringComponent]
-    public struct RaycastData : IComponentData
+    public struct PhysicsCastData : IComponentData
     {
         public Status status;
+
+        public Entity entity;
         public RaycastHit hit;
-        public  float stoppingDistance; //TODO move to a separate component
+        public bool hasTarget;
+
+        public float stoppingDistance; //TODO move to a separate component
         public bool hasReached; //TODO move to a separate component
     }
 }
